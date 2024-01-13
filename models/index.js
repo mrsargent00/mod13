@@ -1,23 +1,18 @@
-// import models
-const Product = require('./Product');
-const Category = require('./Category');
-const Tag = require('./tag');
-const ProductTag = require('./ProductTag');
+//imports models
+const Product = require('./Product')
+const Category = require('./Category')
+const ProductTag = require('./ProductTag')
+const Tag = require('./Tag')
 
-// Products belongsTo Category
-Product.belongsTo(Category)
-
-// Categories have many Products
+// Define associations
+Product.belongsTo(Category);
 Category.hasMany(Product);
 
-// Products belongToMany Tags (through ProductTag)
-Product.belongsToMany(Tag, {through: ProductTag});
 
+Product.belongsToMany(Tag, { through: ProductTag });
+Tag.belongsToMany(Product, { through: ProductTag });
 
-// Tags belongToMany Products (through ProductTag)
-Tag.belongsToMany(Tag, {through: ProductTag});
-
-//Export the models
+// Export the models
 module.exports = {
   Product,
   Category,
