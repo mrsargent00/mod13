@@ -1,6 +1,6 @@
 //imports models
 const Product = require('./Product')
-const Category = require('./Category')
+const Category = require('./Catagory')
 const ProductTag = require('./ProductTag')
 const Tag = require('./Tag')
 
