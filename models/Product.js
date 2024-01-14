@@ -44,12 +44,12 @@ Product.init(
       },
     },
     {
-      sequelize, // Pass the sequelize connection instance
-      timestamps: false, // If you don't want timestamp columns (createdAt, updatedAt)
-      freezeTableName: true, // If you want to use the same model name as the table name
-      underscored: true, // If you want to use snake_case for column names
-      modelName: 'product', // Set the model name (singular, lowercased version of the table name)
-    },
-);
+      sequelize,
+      modelName: "product",
+      timestamps: false,
+      freezeTableName: true,
+      underscored: true,
+    }
+  );
 
 module.exports = Product;
