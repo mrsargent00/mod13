@@ -11,11 +11,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/mrsargent00/mod13"
+    "url": "https://github.com/mrsargent00/mod13.git"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "''",
+  "license": "MIT",
   "devDependencies": {
     "nodemon": "^2.0.3"
   },
@@ -24,5 +24,9 @@
     "express": "^4.18.2",
     "mysql2": "^2.1.0",
     "sequelize": "^6.33.0"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/mrsargent00/mod13/issues"
+  },
+  "homepage": "https://github.com/mrsargent00/mod13#readme"
 }
